@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Musa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+
+            <a href="index.html"> <img class="img-logo" src="imagenes/LOGO LMM.png" alt="logo LMM" width="500px"> </a>
+
+            <ul>
+                <li> <a href="index.html" class="class_a_href"> Nuestra marca </a></li>
+                <li><a href="productos.html" class="class_a_href"> Productos </a></li>
+                <li><a href="" class="class_a_href"> Descuentos </a></li>
+                <li><a href="" class="class_a_href"> Nuestras tiendas </a></li>
+                <li><a href="contacto.html" class="class_a_href"> Contacto </a></li>
+                <li><a href="" class="class_a_href" data-toggle="modal" data-target="#myModal"> Iniciar sesión </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container"><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="text-align: center;">Crear Producto</h1>
+                <div class="form-group">
+                    <label for="usr">Nombre del Producto:</label>
+                    <input type="text" class="form-control" id="usr" required>
+                </div>
+                <div class="form-group">
+                    <label for="usr">Precio:</label>
+                    <input type="text" class="form-control" id="usr" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Descripcion:</label>
+                    <textarea class="form-control" rows="5" id="comment" required></textarea>
+                </div>
+                <button class="btn btn-primary"> Enviar</button><br><br>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="footer"><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Información</h3>
+                    <ul style="text-align: left;">
+                        <li>
+                            <p>Acerca de Nosotros</p>
+                        </li>
+                        <li>
+                            <p>Find Us</p>
+                        </li>
+                        <li>
+                            <p>Contacto</p>
+                        </li>
+                        <li>
+                            <p>Terminos y Condiciones</p>
+                        </li>
+                        <li>
+                            <p>Envios y Devoluciones</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3> Siguenos</h3>
+                    <p>Acerca de Nosotros</p>
+                    <p>SUSCRIBETE A NUESTRO NEWSLETTER</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>LA MIA MUSA</h3>
+                    <p>Bogota</p>
+                    <p>lamiamusa@gmail.com</p>
+                    <p>Cra 15 #76-12</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Iniciar Sesion</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="usr">Nombre:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Iniciar Sesion</button>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</html>
